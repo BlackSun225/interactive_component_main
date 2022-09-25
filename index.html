@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="x-icon/image" href="images/favicon-32x32.png" />
+    <link rel="stylesheet" href="interactive_rating.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Interactive rating component main</title>
+  </head>
+  <body>
+    <main>
+      <div id="home">
+        <div class="img">
+          <img src="images/icon-star.svg" />
+        </div>
+        <h1>How did we do?</h1>
+        <p>Please let us know how we did with your support request. All feedback 
+          is appreciated to help us improve our offering!
+        </p>
+        <div id="rating">
+          <button class="digit" onmouseout="mounseOutColor(this)" onmouseover="mouseOverColor(this)" onclick="changeBackgroundColorAndMessage(this)">1</button>
+          <button class="digit" onmouseout="mounseOutColor(this)" onmouseover="mouseOverColor(this)" onclick="changeBackgroundColorAndMessage(this)">2</button>
+          <button class="digit" onmouseout="mounseOutColor(this)" onmouseover="mouseOverColor(this)" onclick="changeBackgroundColorAndMessage(this)">3</button>
+          <button class="digit" onmouseout="mounseOutColor(this)" onmouseover="mouseOverColor(this)" onclick="changeBackgroundColorAndMessage(this)">4</button>
+          <button class="digit" onmouseout="mounseOutColor(this)" onmouseover="mouseOverColor(this)" onclick="changeBackgroundColorAndMessage(this)">5</button>
+        </div>
+        <button id="button" type="button" onclick="displayThanks()">SUBMIT</button>
+      </div>
+      <div id="thanks">
+        <div class="img">
+          <img src="images/illustration-thank-you.svg" />
+        </div>
+        <div id="message">Choose a number please</div>
+        <h2>Thank you!</h2>
+        <p>We appreciate you taking the time to give a rating. If you ever need 
+          more support, don't hesitate to get in touch!
+        </p>
+      </div>
+    </main>
+    <script src="interative_rating.js">
+/*const digit = document.getElementsByClassName("digit");      
+const home = document.getElementById("home");
+const thanks = document.getElementById("thanks");
+const submitButton = document.getElementById("button");
+const message = document.getElementById("message");
+const digitHover = document.querySelectorAll('.digit:hover');
+
+function changeBackgroundColorAndMessage(a) {
+  for(let i = 0; i < digit.length; i++) {
+    digit[i].style.backgroundColor = "hsla(216, 12%, 54%, 20%)";
+    digit[i].style.color = "hsl(216, 12%, 54%)";
+  }
+  a.style.backgroundColor = "hsl(217, 12%, 63%)";
+  a.style.color = "hsl(0, 0%, 100%)";
+  message.innerHTML = `You selected ${a.innerHTML} out of 5`;
+  var memory = a;
+}
+function mouseOverColor(a) {
+  for(let i = 0; i < digit.length; i++) {
+    if(digit[i].style.backgroundColor = 'hsl(25, 97%, 53%)') {
+      digit[i].style.backgroundColor = "hsla(216, 12%, 54%, 20%)";
+      digit[i].style.color = "hsl(216, 12%, 54%)";
+    }
+  }
+  a.style.backgroundColor = 'hsl(25, 97%, 53%)';
+  a.style.color = 'hsl(0, 0%, 100%)';
+}
+function mounseOutColor(a) {
+  if(a.style.backgroundColor !== "hsl(217, 12%, 63%)" && a.style.color !== "hsl(0, 0%, 100%)") {
+    a.style.backgroundColor = "hsla(216, 12%, 54%, 20%)";
+    a.style.color = "hsl(216, 12%, 54%)";
+  }
+}  
+function displayThanks() {
+  document.getElementById("home").style.display = "none";
+  document.getElementById("thanks").style.display = "block";
+}*/
+    </script> 
+  </body>
+</html>

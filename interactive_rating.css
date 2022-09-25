@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Overpass', sans-serif;
+}
+main{
+  background: hsl(216, 12%, 8%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#home, #thanks{
+  max-width: 310px;
+  border-radius: 20px;
+  border: none;
+  padding: 25px;
+  background: hsl(213, 19%, 18%);
+}
+#home .img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: hsla(216, 12%, 54%, 20%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+#home .img img{
+  width: 35%;
+}
+#home h1{
+  color: hsl(0, 0%, 100%);
+  font-size: 1.3em;
+  font-weight: 500;
+  margin: 0.5em 0;
+}
+#home p{
+  color: hsl(217, 12%, 63%);
+  font-size: 0.8em;
+  line-height: 1.4em;
+}
+#rating{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.3em 0;
+}
+.digit{
+  font-family: 'Overpass', sans-serif;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: hsla(216, 12%, 54%, 20%);
+  color: hsl(216, 12%, 54%);
+  border: none;
+  cursor: pointer;
+}
+#button{
+  display: block;
+  width: 100%;
+  background: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 30px;
+  text-align: center;
+  padding: 10px 0;
+  border: none;
+  font-family: 'Overpass', sans-serif;
+  letter-spacing: 1px;
+  font-size: 0.7em;
+  cursor: pointer;
+}
+#button:hover {
+  background: hsl(0, 0%, 100%);
+  color:hsl(25, 97%, 53%);
+  font-weight: 700;
+}
+#thanks{
+  display: none;
+}
+#thanks .img{
+  width: 100%;
+  margin: 10px 0;
+}
+.img img{
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}
+#thanks #message{
+  max-width: 70%;
+  text-align: center;
+  color: hsl(25, 97%, 53%);
+  padding: 10px 15px;
+  font-size: 0.8em;
+  font-family: 'Overpass', sans-serif;
+  margin: 25px auto;
+  background: hsla(216, 12%, 54%, 20%);
+  border-radius: 30px;
+  border: none;
+}
+#thanks h2{
+  text-align: center;
+  font-size: 1.3em;
+  font-family: 'Overpass', sans-serif;
+  color:hsl(0, 0%, 100%);
+}
+#thanks p {
+  font-size: 0.8em;
+  color: hsl(217, 12%, 63%);
+  text-align: center;
+  margin: 10px 0;
+}
